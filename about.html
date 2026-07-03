@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Karan Khanna</title>
+<meta name="description" content="About Karan Khanna: analytics, strategy and applied AI leader with 10 years across credit operations, training and enterprise analytics at American Express.">
+
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-orbs" aria-hidden="true">
+  <div class="orb orb-blue"></div>
+  <div class="orb orb-teal"></div>
+</div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">KK</span>
+      <span class="logo-name">Karan Khanna</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active-link">About</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="ai-lab.html" class="nav-link">AI Lab</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button type="button" class="btn btn-primary btn-sm" id="connectBtn">Let's Connect</button>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="connect-modal" id="connectModal" aria-hidden="true">
+  <div class="connect-modal-overlay" id="connectModalOverlay"></div>
+  <div class="connect-modal-panel" role="dialog" aria-modal="true" aria-labelledby="connectModalTitle">
+    <button class="connect-modal-close" id="connectModalClose" type="button" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+    </button>
+    <h3 class="connect-modal-title" id="connectModalTitle">Let's Connect</h3>
+    <p class="connect-modal-subtext">Choose how you'd like to reach out.</p>
+    <div class="contact-cards connect-modal-cards">
+      <a class="contact-card" href="mailto:karankhanna13397@gmail.com">
+        <div class="contact-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+            <path d="m4 7 8 6 8-6"></path>
+          </svg>
+        </div>
+        <div class="contact-text">
+          <span class="contact-label">Email Me</span>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://wa.me/918800359056" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.06h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31s-.88.86-.88 2.1.9 2.44 1.03 2.61c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z"></path></svg>
+        </div>
+        <div class="contact-text">
+          <span class="contact-label">Message on WhatsApp</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="about-hero">
+    <div class="section-inner">
+      <div class="profile-card reveal">
+        <div class="profile-identity">
+          <span class="section-label">ABOUT ME</span>
+          <h1 class="profile-heading">Karan Khanna</h1>
+          <p class="profile-role">Analytics &amp; Strategy Lead | AI Solutions Consultant</p>
+        </div>
+
+        <p class="profile-intro">
+          Over the past ten years, I've worked across credit operations, enterprise learning, and business analytics, helping translate complex business challenges into measurable outcomes within a large financial services enterprise. Today, I'm expanding that foundation into AI consulting: designing intelligent workflows, decision systems, and enterprise AI solutions that connect business strategy with modern technology. I believe the future belongs to organizations that don't just use AI, but embed it into how they think, decide, and operate.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy-section">
+    <div class="section-inner">
+      <div class="section-header philosophy-header">
+        <h2 class="section-heading">The thinking behind my <span class="gradient-text">work</span></h2>
+        <p class="philosophy-intro">Every solution starts with understanding the business challenge and the people solving it. The technology changes from project to project, but the goal stays the same: create something that helps teams make better decisions and achieve measurable outcomes.</p>
+      </div>
+
+      <div class="philosophy-layout">
+        <div class="philosophy-main">
+          <div class="philosophy-mini-grid">
+            <div class="bento-card philosophy-mini-card">
+              <div class="bento-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="12" cy="12" r="0.5" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </div>
+              <h3 class="bento-title">Start With the Business Question</h3>
+              <p class="bento-desc">Every engagement starts with the problem and the decision behind it. The right solution follows once that's clear, not before.</p>
+            </div>
+
+            <div class="bento-card philosophy-mini-card">
+              <div class="bento-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <polyline points="8 12 11 15 16 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="bento-title">Simplicity Scales</h3>
+              <p class="bento-desc">The best solution isn't the most sophisticated one. It's the one people trust, keep using, and can maintain long after I'm gone.</p>
+            </div>
+
+            <div class="bento-card philosophy-mini-card">
+              <div class="bento-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path>
+                  <circle cx="12" cy="12" r="3.5"></circle>
+                </svg>
+              </div>
+              <h3 class="bento-title">AI Extends People, Not Judgment</h3>
+              <p class="bento-desc">AI should take the repetitive work off people's plates and surface what matters, so judgment stays where it belongs: with people.</p>
+            </div>
+          </div>
+
+          <div class="bento-card philosophy-wide-card">
+            <h3 class="bento-title">Signals I optimize for</h3>
+            <div class="signal-pills">
+              <span class="signal-pill">Clarity Over Complexity</span>
+              <span class="signal-pill">Decision Quality</span>
+              <span class="signal-pill">Stakeholder Buy-in</span>
+              <span class="signal-pill">Maintainability</span>
+              <span class="signal-pill">Measurable Impact</span>
+              <span class="signal-pill">Practical Adoption</span>
+            </div>
+          </div>
+
+          <div class="bento-card philosophy-wide-card">
+            <h3 class="bento-title">How a typical engagement runs</h3>
+            <div class="engagement-steps">
+              <div class="engagement-step">
+                <span class="engagement-step-index">01</span>
+                <p>Understand the business objective, key decisions, and success metrics.</p>
+              </div>
+              <div class="engagement-step">
+                <span class="engagement-step-index">02</span>
+                <p>Map stakeholders, workflows, constraints, and available data.</p>
+              </div>
+              <div class="engagement-step">
+                <span class="engagement-step-index">03</span>
+                <p>Design the right combination of analytics, automation, and AI.</p>
+              </div>
+              <div class="engagement-step">
+                <span class="engagement-step-index">04</span>
+                <p>Measure adoption, refine the solution, and continuously improve outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-sidebar">
+          <div class="bento-card snapshot-card">
+            <h3 class="bento-title">Engagement Snapshot</h3>
+
+            <div class="snapshot-rows">
+              <div class="snapshot-row">
+                <span class="snapshot-label">Primary Focus</span>
+                <span class="snapshot-value">Decision Intelligence, Analytics &amp; AI Systems</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snapshot-label">Build Style</span>
+                <span class="snapshot-value">Practical systems built around real business workflows</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snapshot-label">Collaboration</span>
+                <span class="snapshot-value">Close partnership with business, ops &amp; technical teams</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snapshot-label">Best Fit</span>
+                <span class="snapshot-value">Leaders who want better decisions, not more reports</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snapshot-label">Available for</span>
+                <span class="snapshot-value">Decision intelligence, analytics strategy, workflow automation, AI solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-heading">Education</h2>
+      </div>
+
+      <div class="bento-card education-card">
+        <h3 class="bento-title">Academic Background</h3>
+
+        <div class="education-items">
+          <div class="education-item">
+            <div class="bento-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 2 8l10 5 10-5-10-5Z"></path>
+                <path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"></path>
+                <path d="M22 8v6"></path>
+              </svg>
+            </div>
+            <h4 class="education-item-title">B.A. (Hons.) in Political Science</h4>
+            <span class="snapshot-label education-item-label">Perspective Gained</span>
+            <div class="signal-pills education-item-pills">
+              <span class="signal-pill">Systems Thinking</span>
+              <span class="signal-pill">Policy &amp; Governance</span>
+              <span class="signal-pill">Human Behavior</span>
+              <span class="signal-pill">Critical Analysis</span>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="bento-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 2 8l10 5 10-5-10-5Z"></path>
+                <path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"></path>
+                <path d="M22 8v6"></path>
+              </svg>
+            </div>
+            <div class="education-item-header">
+              <h4 class="education-item-title">M.Sc Data Science &amp; Analytics</h4>
+              <span class="status-tag">In Progress</span>
+            </div>
+            <span class="snapshot-label education-item-label">Current Focus</span>
+            <div class="signal-pills education-item-pills">
+              <span class="signal-pill">Machine Learning</span>
+              <span class="signal-pill">Statistical Modeling</span>
+              <span class="signal-pill">Applied AI</span>
+              <span class="signal-pill">Decision Intelligence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="certifications-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-heading">Certifications</h2>
+      </div>
+
+      <div class="certifications-grid">
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <img src="https://cdn.simpleicons.org/google" alt="Google" width="22" height="22" loading="lazy">
+          </div>
+          <h3 class="bento-title">Google Data Analytics Professional Certificate</h3>
+          <span class="cert-issuer">Google</span>
+          <p class="cert-skills">Top Skills Learned: Data Cleaning, Data Analysis &amp; Tableau</p>
+          <div class="cert-actions">
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/9PJJBLEZD33Q" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Credential</a>
+          </div>
+        </div>
+
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <img src="https://cdn.simpleicons.org/google" alt="Google" width="22" height="22" loading="lazy">
+          </div>
+          <h3 class="bento-title">Google Project Management Professional Certificate</h3>
+          <span class="cert-issuer">Google</span>
+          <p class="cert-skills">Top Skills Learned: Agile Methodology, Stakeholder Management &amp; Risk Management</p>
+          <div class="cert-actions">
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/HXYB6DVAK27Z" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Credential</a>
+          </div>
+        </div>
+
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <img src="https://cdn.simpleicons.org/anthropic/F5F7FA" alt="Anthropic" width="22" height="22" loading="lazy">
+          </div>
+          <h3 class="bento-title">AI Fluency: Framework &amp; Foundations</h3>
+          <span class="cert-issuer">Anthropic</span>
+          <p class="cert-skills">Top Skills Learned: AI Fluency, Prompt Writing &amp; GenAI Fundamentals</p>
+          <div class="cert-actions">
+            <a href="https://verify.skilljar.com/c/3an5dpz3bu3r" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Credential</a>
+          </div>
+        </div>
+
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <img src="https://cdn.simpleicons.org/anthropic/F5F7FA" alt="Anthropic" width="22" height="22" loading="lazy">
+          </div>
+          <h3 class="bento-title">Introduction to Claude Cowork</h3>
+          <span class="cert-issuer">Anthropic</span>
+          <p class="cert-skills">Top Skills Learned: AI Assisted Workflow Design, Knowledge Based Prompt Engineering &amp; AI Context Management</p>
+          <div class="cert-actions">
+            <a href="https://verify.skilljar.com/c/zcbchfeptn9s" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">View Credential</a>
+          </div>
+        </div>
+
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="5"></circle>
+              <path d="m8.5 12.5-1.5 7 5-2.5 5 2.5-1.5-7"></path>
+            </svg>
+          </div>
+          <h3 class="bento-title">Professional Certificate Program in Data Analytics, GenAI &amp; Adaptive Systems</h3>
+          <span class="cert-issuer">IHFC, IIT Delhi</span>
+          <span class="status-tag">In Progress</span>
+          <p class="cert-skills">Top Skills Learned: Generative AI, Adaptive Systems, Foundations of Machine Learning</p>
+          <div class="cert-actions">
+            <a class="btn btn-secondary btn-sm btn-disabled" aria-disabled="true" tabindex="-1">View Credential</a>
+          </div>
+        </div>
+
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <img src="assets/microsoft%20icon.png" alt="Microsoft" width="22" height="22" loading="lazy" class="icon-invert">
+          </div>
+          <h3 class="bento-title">Microsoft SQL Server Professional Certificate</h3>
+          <span class="cert-issuer">Microsoft</span>
+          <span class="status-tag">In Progress</span>
+          <p class="cert-skills">Top Skills Learned: T-SQL, Query Optimization, Database Management</p>
+          <div class="cert-actions">
+            <a class="btn btn-secondary btn-sm btn-disabled" aria-disabled="true" tabindex="-1">View Credential</a>
+          </div>
+        </div>
+
+        <div class="bento-card cert-card">
+          <div class="bento-icon">
+            <img src="assets/microsoft%20icon.png" alt="Microsoft" width="22" height="22" loading="lazy" class="icon-invert">
+          </div>
+          <h3 class="bento-title">Microsoft Power BI Developer and Architect</h3>
+          <span class="cert-issuer">Microsoft</span>
+          <span class="status-tag">In Progress</span>
+          <p class="cert-skills">Top Skills Learned: DAX, Data Modeling, Interactive Dashboards</p>
+          <div class="cert-actions">
+            <a class="btn btn-secondary btn-sm btn-disabled" aria-disabled="true" tabindex="-1">View Credential</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="domains-section">
+    <div class="section-inner">
+      <div class="section-header">
+        
+        <h2 class="section-heading">How I Create Impact</h2>
+      </div>
+
+      <div class="domains-grid">
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="12" width="4" height="9"></rect>
+              <rect x="10" y="7" width="4" height="14"></rect>
+              <rect x="17" y="3" width="4" height="18"></rect>
+            </svg>
+          </div>
+          <h3 class="bento-title">Business Analytics</h3>
+          <p class="bento-desc">Uncover insights, build dashboards, deliver data-driven decisions.</p>
+          <div class="domain-capabilities">
+            <span class="snapshot-label">Core Capabilities</span>
+            <div class="signal-pills domain-pills">
+              <span class="signal-pill">SQL</span>
+              <span class="signal-pill">Python</span>
+              <span class="signal-pill">Data Visualization</span>
+            </div>
+          </div>
+          <p class="proof-point">Reduced reporting effort by 120+ hours per month through analytics and automation.</p>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <polygon points="15 9 11 11 9 15 13 13"></polygon>
+            </svg>
+          </div>
+          <h3 class="bento-title">Strategy &amp; Leadership</h3>
+          <p class="bento-desc">Translate insights into business strategy and cross-functional execution.</p>
+          <div class="domain-capabilities">
+            <span class="snapshot-label">Core Capabilities</span>
+            <div class="signal-pills domain-pills">
+              <span class="signal-pill">Roadmapping</span>
+              <span class="signal-pill">Stakeholder Alignment</span>
+              <span class="signal-pill">Planning</span>
+            </div>
+          </div>
+          <p class="proof-point">Led cross-functional execution across several global markets.</p>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="6" r="2.5"></circle>
+              <circle cx="18" cy="6" r="2.5"></circle>
+              <circle cx="12" cy="18" r="2.5"></circle>
+              <path d="M8.2 7.2 10 16M15.8 7.2 14 16M8.5 6h7"></path>
+            </svg>
+          </div>
+          <h3 class="bento-title">Process &amp; Program Management</h3>
+          <p class="bento-desc">Lead initiatives, manage stakeholders, deliver impact at scale.</p>
+          <div class="domain-capabilities">
+            <span class="snapshot-label">Core Capabilities</span>
+            <div class="signal-pills domain-pills">
+              <span class="signal-pill">Execution</span>
+              <span class="signal-pill">Governance</span>
+              <span class="signal-pill">Change Management</span>
+            </div>
+          </div>
+          <p class="proof-point">Managed programs supporting more than 10,000+ employees.</p>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path>
+              <circle cx="12" cy="12" r="3.5"></circle>
+            </svg>
+          </div>
+          <h3 class="bento-title">Applied AI</h3>
+          <p class="bento-desc">Build practical AI-powered workflows and tools that solve real business problems.</p>
+          <div class="domain-capabilities">
+            <span class="snapshot-label">Core Capabilities</span>
+            <div class="signal-pills domain-pills">
+              <span class="signal-pill">LLMs</span>
+              <span class="signal-pill">Automation</span>
+              <span class="signal-pill">AI Workflows</span>
+            </div>
+          </div>
+          <p class="proof-point">Built AI-powered workflows to extend analytics into automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="contact">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <div class="cta-header">
+          <h2 class="section-heading">Let's Connect</h2>
+        </div>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:karankhanna13397@gmail.com">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Send Me an Email</span>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://wa.me/918800359056" target="_blank" rel="noopener">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.06h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31s-.88.86-.88 2.1.9 2.44 1.03 2.61c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z"></path></svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Text Me on WhatsApp</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; <span id="footerYear"></span> Karan Khanna. All rights reserved.</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/karansthinkinglab" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.42.36.79 1.08.79 2.17v3.22c0 .3.21.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/karan-khanna1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3a1.97 1.97 0 1 0 0 3.94 1.97 1.97 0 0 0 0-3.94ZM20.5 21h-3.37v-6.06c0-1.45-.03-3.31-2.02-3.31-2.03 0-2.34 1.58-2.34 3.2V21H9.4V8.5h3.24v1.71h.05c.45-.85 1.56-1.75 3.21-1.75 3.43 0 4.06 2.26 4.06 5.2V21Z"></path></svg>
+      </a>
+      <a href="https://www.youtube.com/@KaransThinkingLab" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 7.2a3.02 3.02 0 0 0-2.12-2.14C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 7.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 4.8 3.02 3.02 0 0 0 2.12 2.14C4.5 19.5 12 19.5 12 19.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-4.8ZM9.6 15.3V8.7l6.3 3.3-6.3 3.3Z"></path></svg>
+      </a>
+      <a href="https://www.instagram.com/karann.khanna/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

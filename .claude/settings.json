@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(which node *)",
+      "Read(//tmp/**)",
+      "WebFetch(domain:sites.google.com)",
+      "Bash(convert -version)",
+      "Bash(start \"\" \"d:\\\\Karan's Thinking Lab\\\\Karan's Portfolio\\\\about.html\")",
+      "Bash(start \"\" \"d:\\\\Karan's Thinking Lab\\\\Karan's Portfolio\\\\index.html\")",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(command -v chromium-cli)",
+      "Bash(command -v python3)",
+      "Bash(command -v python)",
+      "Bash(chromium-cli --help)",
+      "Bash(echo \"chromium-cli:$?\")",
+      "Bash(command -v npx)",
+      "Bash(echo \"npx:$?\")",
+      "Bash(command -v node)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npx -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
+      "PowerShell(python -c \"import playwright; print\\('playwright available'\\)\" 2>&1)",
+      "Bash(python3 -c \"import playwright\")"
+    ]
+  }
+}
