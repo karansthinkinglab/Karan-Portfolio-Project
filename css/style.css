@@ -2048,6 +2048,12 @@ body.modal-open {
   gap: 0.75rem;
 }
 
+.modal-cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .modal-tool-icon {
   display: flex;
   align-items: center;

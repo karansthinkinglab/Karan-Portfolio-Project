@@ -408,6 +408,7 @@ if (document.querySelector('.case-grid')) {
       tags: ['Claude Code', 'VS Code', 'Vercel'],
       tools: ['Claude', 'VS Code', 'Vercel'],
       liveUrl: 'index.html',
+      githubUrl: 'https://github.com/karansthinkinglab/-Karan-Portfolio',
       problem: 'Needed a single platform to present storytelling, in-depth case studies, and technical demonstrations without juggling multiple disconnected tools or slow development cycles.',
       solution: 'This very portfolio is the project: built and shipped end-to-end, from information architecture to interactive case study modals, using Claude Code inside VS Code for rapid AI-assisted development, vibe-coded and published in just 2 days.',
       recommendations: [
@@ -448,6 +449,7 @@ if (document.querySelector('.case-grid')) {
     shield: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 5.5v5c0 5 3.2 8.7 7.5 10 4.3-1.3 7.5-5 7.5-10v-5L12 3z"></path></svg>',
     clock: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>',
     external: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4 10 14M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></svg>',
+    github: '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"></path></svg>',
   };
 
   const toolIcons = {
@@ -522,7 +524,10 @@ if (document.querySelector('.case-grid')) {
       <div class="modal-tools-row">
         ${data.tools.map((t) => `<div class="modal-tool-icon">${toolIcons[t] || ''}</div>`).join('')}
       </div>
-      <a href="${data.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">${icons.external} View Dashboard</a>
+      <div class="modal-cta-buttons">
+        ${data.githubUrl ? `<a href="${data.githubUrl}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">${icons.github} View GitHub</a>` : ''}
+        <a href="${data.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">${icons.external} View Dashboard</a>
+      </div>
     </div>
   `;
 

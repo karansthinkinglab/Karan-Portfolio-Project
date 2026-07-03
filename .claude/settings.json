@@ -21,7 +21,8 @@
       "PowerShell(Get-Command npx -ErrorAction SilentlyContinue)",
       "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
       "PowerShell(python -c \"import playwright; print\\('playwright available'\\)\" 2>&1)",
-      "Bash(python3 -c \"import playwright\")"
+      "Bash(python3 -c \"import playwright\")",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
