@@ -288,146 +288,168 @@ if (document.querySelector('.case-grid')) {
   const caseStudies = {
     'capacity-tracking': {
       title: 'Analyst Capacity Tracking Dashboard',
-      shortDesc: 'A Power BI solution to monitor analyst capacity, workload distribution, and utilization for proactive resource planning.',
-      teamSize: 'Built for a team of 10 analysts',
-      tags: ['Power BI', 'DAX', 'Excel'],
+      shortDesc: 'A Power BI dashboard monitoring analyst capacity, workload distribution, and utilization for proactive resource planning. Built for a team of 10 analysts.',
       tools: ['Power BI', 'Excel'],
-      liveUrl: '#',
-      problem: 'Limited visibility into analyst capacity and workload distribution resulted in reactive planning, uneven workload allocation, and SLA breaches.',
-      solution: 'Designed a centralized Power BI dashboard that monitored analyst availability, workload distribution, utilization, and SLA trends to enable proactive resource planning.',
-      recommendations: [
-        'Standardized workload allocation',
-        'Balanced analyst utilization',
-        'Planned for demand peaks',
-        'Monitored utilization & SLA trends',
-        'Embedded capacity planning',
-      ],
+      githubUrl: 'https://github.com/karansthinkinglab/capacity-planning-dashboard',
+      problem: 'Limited visibility into analyst capacity and workload distribution led to reactive planning, uneven workload allocation, and SLA breaches.',
+      solution: 'A centralized Power BI dashboard tracking analyst availability, workload distribution, utilization, and SLA trends to enable proactive resource planning.',
       impactPoints: [
         'Improved resource planning',
         'Balanced workload distribution',
         'Increased operational visibility',
         'Reduced manual planning effort',
       ],
-      kpis: [
-        { label: 'Overall Utilization', value: '101.3%', icon: 'users' },
-        { label: 'Pre-launch Workload', value: '~13.1K', icon: 'user' },
-        { label: 'Post-launch Workload', value: '6.8K-8.2K', icon: 'users' },
-        { label: 'SLA Breach Rate', value: '6.27%', icon: 'shield' },
-        { label: 'SLA Breach Hours', value: '~0.6K', icon: 'clock' },
+      screenshots: [
+        {
+          src: 'assets/projects/capacity/cap_plan_dashboard_1.png',
+          alt: 'Capacity planning dashboard overview showing analyst capacity, workload, and utilization',
+          caption: 'Consolidated view of analyst capacity, workload, and utilization; structured tracking from Oct 2025 surfaced previously invisible capacity imbalances.',
+        },
+        {
+          src: 'assets/projects/capacity/cap_plan_dashboard_2.png',
+          alt: 'Chart comparing available capacity vs actual workload over time',
+          caption: 'Available capacity vs actual workload over time; the dashed marker shows when structured capacity tracking began.',
+        },
+        {
+          src: 'assets/projects/capacity/cap_plan_dashboard_3.png',
+          alt: 'Chart showing SLA breach share before and after dashboard launch',
+          caption: 'SLA breach share fell from ~44% before launch to ~6% after, with breach hours dropping sharply.',
+        },
+        {
+          src: 'assets/projects/capacity/cap_plan_dashboard_4.png',
+          alt: 'Chart comparing allocated hours to analyst capacity before and after launch',
+          caption: "Pre-launch, allocated hours routinely exceeded each analyst's capacity; post-launch, allocation settled to optimal utilization.",
+        },
       ],
     },
     'tool-adoption': {
       title: 'Global Tool Adoption & Training Dashboard',
-      shortDesc: 'A Tableau solution to track tool rollout, training adoption, and post-implementation impact across global markets.',
-      teamSize: 'Rolled out across 6+ global markets',
-      tags: ['Tableau'],
-      tools: ['Tableau'],
-      liveUrl: '#',
-      problem: 'No unified view existed to track rollout progress, training effectiveness, or business impact across markets.',
-      solution: 'Built an end-to-end Tableau tracking solution monitoring rollout progress, training execution, adoption levels, and post-launch impact.',
-      recommendations: [
-        'Accelerate training completion in high-pending markets',
-        'Strengthen Team Lead enablement',
-        'Target low-CSAT markets like Germany and UAE with focused interventions',
-        'Convert efficiency gains into customer experience gains through resolution quality focus',
-      ],
+      shortDesc: 'A Tableau dashboard tracking global tool rollout, training adoption, and post-implementation impact across 10 markets and 4 regions.',
+      tools: ['Tableau', 'Excel'],
+      ctaLabel: 'View on Tableau Public',
+      ctaUrl: 'https://public.tableau.com/app/profile/karan6464/viz/GlobalToolAdoptionTrainingDashboard/Dashboard1',
+      problem: 'A new customer-servicing toolset was rolling out across global markets with no unified view of adoption, training progress, or whether it was actually improving performance. Gaps in coverage and impact were invisible.',
+      solution: 'A Tableau dashboard consolidating rollout status by region, training completion by market and role, internal vs external CSAT, and call handling time (CHT) trend around the July 2025 launch, giving one view of adoption and impact.',
       impactPoints: [
-        'Identified adoption gaps across markets',
-        'Improved training quality tracking',
-        'Reduced call handling time ~12% post-launch',
-        'Centralized rollout & CSAT visibility for stakeholders',
+        'Call handling time down ~12% post-launch (average CHT ~649 to ~570)',
+        'Clear visibility into training coverage gaps by market and role',
+        'Surfaced high- and low-performing markets via CSAT color coding',
+        'Enabled data-led decisions on where to focus training',
       ],
-      kpis: [
-        { label: 'Training Completion', value: '49%', icon: 'check' },
-        { label: 'Employees Trained', value: '172,771', icon: 'users' },
-        { label: 'Pending Training', value: '93,171', icon: 'user' },
-        { label: 'Call Handling Time', value: '↓12%', icon: 'clock' },
-        { label: 'External CSAT', value: '3.53-3.55', icon: 'star' },
+      screenshots: [
+        {
+          src: 'assets/projects/tool-adoption/tool_launch_1.png',
+          alt: 'Global rollout status by region with overall training completion KPIs and completion counts by role',
+          caption: 'Global rollout status by region with overall training completion KPIs, and completion counts by role to expose coverage gaps.',
+        },
+        {
+          src: 'assets/projects/tool-adoption/tool_launch_2.png',
+          alt: 'Internal versus external CSAT by market and role with color coding flagging training or customer experience gaps',
+          caption: 'Internal (training) vs external (customer) CSAT by market and role; color coding flags where training quality or customer experience lags.',
+        },
+        {
+          src: 'assets/projects/tool-adoption/tool_launch_3.png',
+          alt: 'Average call handling time trend across 2025 with a marker showing the July tool rollout',
+          caption: 'Average call handling time across 2025; the marker shows the July tool rollout, after which CHT dropped ~12%.',
+        },
       ],
     },
     'csat-learning': {
       title: 'CSAT & Learning Effectiveness Analysis',
-      shortDesc: 'A root-cause analysis framework, delivered as an interactive Claude-built artifact, to diagnose CSAT drivers across global markets.',
-      teamSize: 'Delivered as an interactive Claude artifact',
-      tags: ['Claude', 'Kirkpatrick Framework'],
-      tools: ['Claude'],
-      liveUrl: '#',
-      problem: 'Learner satisfaction was declining across markets but the root cause was unclear, with feedback siloed across markets, programmes, and delivery formats.',
-      solution: 'Applied the Kirkpatrick evaluation methodology to build a structured root cause analysis framework, aggregating multi-market feedback segmented by programme type, delivery format, and market into an interactive Claude-built dashboard artifact for Director and VP review.',
-      recommendations: [
-        'Standardize delivery practices across markets',
-        'Redesign consistently underperforming programme types',
-        'Introduce targeted trainer development interventions',
-        'Establish a minimum feedback volume threshold per market',
-        'Create a shared CSAT baseline for fair benchmarking',
-      ],
+      shortDesc: 'An interactive Kirkpatrick-framed diagnostic tracing a learner satisfaction decline across 14 markets that the headline average was hiding.',
+      tools: ['Claude', 'HTML/CSS/JS', 'Chart.js'],
+      githubUrl: 'https://github.com/karansthinkinglab/csat-learning-effectiveness',
+      problem: 'A single rising average made learner satisfaction look healthy, but it masked a widening spread between markets. Declining markets went unnoticed, with no signal on where to intervene.',
+      solution: 'Built an interactive diagnostic reading the data as a distribution, not a mean. Structured on the Kirkpatrick model, it moves from reaction (CSAT trend) to learning (score by programme) to behaviour (root cause per market) to results (recommendations) — delivered as a shareable web artifact rather than a BI dashboard, since this was a one-off leadership narrative, not an operational tool.',
       impactPoints: [
-        'Shifted the conversation from "scores are down" to why and where',
-        'Identified delivery consistency as the core driver',
+        'Surfaced a 2.9-point gap the 7.8 average concealed',
+        'Isolated 3 at-risk markets, each traced to a fixable content cause',
+        'Reframed the weakness as programme-level, not geographic',
         'Findings presented directly to Directors & VPs',
-        'Enabled fair, market-level CSAT benchmarking',
+        'Recommended reporting spread alongside average to catch declines early',
       ],
-      kpis: [
-        { label: 'Markets Analyzed', value: '14', icon: 'users' },
-        { label: 'Evaluation Framework', value: 'Kirkpatrick L1-L4', icon: 'target' },
-        { label: 'Root Cause', value: 'Delivery Consistency', icon: 'alert' },
-        { label: 'Presented To', value: 'Directors & VPs', icon: 'star' },
+      screenshots: [
+        {
+          src: 'assets/projects/csat-learning/csat_1.png',
+          alt: 'Masthead and hero showing the 7.8 average headline, the hidden-spread divergence chart, and the 4-KPI strip',
+          caption: 'A rising 7.8 global average looked healthy, but the top and bottom markets were diverging underneath it.',
+        },
+        {
+          src: 'assets/projects/csat-learning/csat_2.png',
+          alt: 'Section 01 showing the CSAT trend chart by quarter and a table of what the headline number misses',
+          caption: 'Eight quarters of CSAT: the mean improves while the spread between strongest and weakest market widens to 2.9 points.',
+        },
+        {
+          src: 'assets/projects/csat-learning/csat_3.png',
+          alt: 'Sections 02 and 03 showing programme distribution, market vs target, the all-markets table, and root-cause cards',
+          caption: 'Breaking scores by programme type showed the weakness sits in compliance and tech-skills content, not in specific geographies; three markets fall below the 7.5 target.',
+        },
+        {
+          src: 'assets/projects/csat-learning/csat_4.png',
+          alt: 'Section 04 showing the four sequenced recommendations and the footer',
+          caption: 'Four recommendations sequenced by the size of the gap they close, including reporting spread alongside average.',
+        },
       ],
     },
     'marketing-performance': {
       title: 'Marketing Performance Analysis',
-      shortDesc: 'A Power BI view unifying multi-channel marketing data for a small business to uncover performance gaps and improve budget allocation.',
-      teamSize: 'Analyzed across 4+ marketing channels',
-      tags: ['Power BI', 'Excel'],
+      shortDesc: 'A Power BI dashboard analysing six months of multi-channel marketing performance for a small business, covering lead source efficiency, conversion rates, and budget allocation.',
       tools: ['Power BI', 'Excel'],
-      liveUrl: '#',
-      problem: 'Marketing performance data was spread across channels, making it difficult to compare effectiveness, track ROI, and identify underperforming campaigns.',
-      solution: 'Built a unified Power BI view of marketing performance across channels, using Excel for data prep, to identify inefficiencies and enable better budget allocation.',
-      recommendations: [
-        'Reallocate budget toward high-performing channels like Instagram and Google',
-        'Optimize or reduce spend on underperforming campaigns',
-        'Strengthen conversion efficiency tracking',
-      ],
+      githubUrl: 'https://github.com/karansthinkinglab/marketing-performance-analysis',
+      problem: "Marketing spend was spread across four lead sources with no consolidated view of what each was actually returning. Volume was visible but efficiency wasn't, so budget decisions were being made on instinct rather than evidence.",
+      solution: 'A Power BI dashboard consolidating the full funnel — inquiries and conversions by lead source, conversion share by channel, cost per conversion, and revenue against spend over time — so each channel could be judged on efficiency rather than raw volume.',
       impactPoints: [
-        'Unified channel effectiveness into one view',
-        'Improved overall ROI',
-        'Guided budget reallocation to top channels',
-        'Flagged high-spend, low-return campaigns',
+        "Found the highest-volume channel was not the most efficient: Google converts at 44.2% vs Instagram's 39.5%, despite Instagram generating more inquiries",
+        'Surfaced an inverse relationship between spend and return: the two lowest-spend months delivered the two best returns (12.8x and 13.0x), while the highest-spend month returned 10.3x',
+        'Reframed budget allocation from "spend more" to "spend where intent is highest"',
+        'Established return on spend as a monthly metric so declining efficiency surfaces early',
+        'Overall: 917 inquiries, 361 conversions, 39.4% conversion rate, ~10.9x return on spend',
       ],
-      kpis: [
-        { label: 'Top Channel', value: 'Instagram', icon: 'star' },
-        { label: 'Secondary Channel', value: 'Google', icon: 'target' },
-        { label: 'Lower Volume Channels', value: 'Walk-in & WhatsApp', icon: 'users' },
-        { label: 'Spend vs Revenue', value: 'Not Correlated', icon: 'alert' },
+      screenshots: [
+        {
+          src: 'assets/projects/marketing-performance-analysis/marketing_overall.png',
+          alt: 'Full funnel KPI summary showing inquiries, conversions, conversion rate, revenue, spend, and cost per conversion',
+          caption: 'Full funnel view: 917 inquiries converting at 39.4%, ₹693K revenue on ₹63.8K spend, with cost per conversion at ₹176.7.',
+        },
+        {
+          src: 'assets/projects/marketing-performance-analysis/marketing_channel_performance.png',
+          alt: 'Lead source breakdown comparing inquiries, conversions, and conversion rate by channel',
+          caption: 'Instagram leads on volume with 314 inquiries and 124 conversions, but ranked by conversion rate Google is the strongest channel at 44.2%.',
+        },
+        {
+          src: 'assets/projects/marketing-performance-analysis/marketing_conversion_performance.png',
+          alt: 'Inquiry-to-conversion funnel chart alongside a channel mix breakdown of conversions',
+          caption: 'The inquiry-to-conversion funnel and channel mix: social drives the largest share of conversions, search the most efficient.',
+        },
+        {
+          src: 'assets/projects/marketing-performance-analysis/marketing_revenue_vs_spend.png',
+          alt: 'Monthly revenue against spend trend showing return on spend by month',
+          caption: 'Revenue against spend by month; the two lowest-spend months (April, May) delivered the highest returns, at 12.8x and 13.0x.',
+        },
       ],
     },
     'ai-website-dev': {
       title: 'AI-Assisted Website Development',
-      shortDesc: 'A modern portfolio platform combining storytelling, project case studies, and technical demonstrations into a single experience.',
-      teamSize: 'Vibe-coded and published in 2 days using Claude Code',
-      tags: ['Claude Code', 'VS Code', 'Vercel'],
-      tools: ['Claude', 'VS Code', 'Vercel'],
-      liveUrl: 'index.html',
-      githubUrl: 'https://github.com/karansthinkinglab/-Karan-Portfolio',
-      problem: 'Needed a single platform to present storytelling, in-depth case studies, and technical demonstrations without juggling multiple disconnected tools or slow development cycles.',
-      solution: 'This very portfolio is the project: built and shipped end-to-end, from information architecture to interactive case study modals, using Claude Code inside VS Code for rapid AI-assisted development, vibe-coded and published in just 2 days.',
-      recommendations: [
-        'Iterate directly in natural language with Claude Code',
-        'Centralize case study data in one source of truth',
-        'Keep motion and design consistent across pages',
-        'Review and refine AI-generated code inside VS Code',
+      shortDesc: "This portfolio itself: a platform combining storytelling and in-depth project case studies in one experience, designed and shipped in 2 days using AI-assisted development.",
+      useProjectLayout: true,
+      tools: ['ChatGPT', 'Claude', 'HTML/CSS/JS', 'GSAP', 'Vercel'],
+      ctaButtons: [
+        { label: "You're looking at it", action: 'close' },
+        { label: 'View on GitHub', url: 'https://github.com/karansthinkinglab/-Karan-Portfolio', action: 'link' },
+      ],
+      problem: 'Presenting analytics work needs more than a CV. Case studies, live dashboards, and technical demos usually end up scattered across disconnected tools, and building a custom site to hold them normally means a slow development cycle or a rigid template.',
+      solution: 'Designed the layout visually first, using ChatGPT image generation to draft design outlines and settle on the structure before any code existed, then built it with Claude Code in VS Code. Case study content is centralised in a single data source, so each new project is a data addition rather than new markup. Shipped end-to-end in 2 days, deployed on Vercel.',
+      whatLearned: [
+        'Designing visually before prompting beats describing in prose: a drafted image gave the build a concrete target and cut iteration cycles sharply',
+        'Centralising case study content in one data structure turned each new project from a code change into a data change',
+        'AI-assisted speed only holds if you read what it produces: several rounds of refinement after reviewing output and user feedback made the difference between working and finished',
+        'Keeping motion and design tokens consistent across pages is easier to enforce up front than to retrofit',
       ],
       impactPoints: [
-        'Shipped a production-ready site in just 2 days',
-        'One consistent experience for storytelling, case studies & demos',
-        'Fully vibe-coded from prompt to production',
-        'Easy to extend with new case studies',
-      ],
-      kpis: [
-        { label: 'Build Tool', value: 'Claude Code', icon: 'rocket' },
-        { label: 'Build Approach', value: 'Vibe-Coded', icon: 'target' },
-        { label: 'Pages Built', value: '5', icon: 'star' },
-        { label: 'Time to Publish', value: '2 Days', icon: 'clock' },
+        'Production-ready site designed and shipped in 2 days',
+        'One consistent surface for storytelling and in-depth case studies',
+        'Architecture makes adding a new case study a data change, not a rebuild',
+        'Live at karan-portfolio-project.vercel.app',
       ],
     },
   };
@@ -460,6 +482,29 @@ if (document.querySelector('.case-grid')) {
     'Claude': '<img src="assets/Claude%20icon.png" alt="Claude" title="Claude" loading="lazy">',
     'VS Code': '<img src="assets/Visual%20Studio%20Code%20(VS%20Code).svg" alt="VS Code" title="VS Code" loading="lazy">',
     'Vercel': '<svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" title="Vercel"><path d="M12 3 22 20H2L12 3z"></path></svg>',
+    'HTML/CSS/JS': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" title="HTML/CSS/JS"><path d="M8 4 3 12l5 8M16 4l5 8-5 8"></path></svg>',
+    'Chart.js': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" title="Chart.js"><path d="M4 20V10M12 20V4M20 20v-7"></path></svg>',
+    'ChatGPT': '<img src="assets/ChatGpt%20icon.png" alt="ChatGPT" title="ChatGPT" loading="lazy" class="tool-icon-invert">',
+    'GSAP': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" title="GSAP"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>',
+  };
+
+  const toolLabels = {
+    'Power BI': 'Power BI',
+    'Excel': 'Excel',
+    'Tableau': 'Tableau',
+    'DAX': 'DAX',
+    'Claude': 'Claude Code',
+    'VS Code': 'VS Code',
+    'Vercel': 'Vercel',
+    'HTML/CSS/JS': 'HTML/CSS/JS',
+    'Chart.js': 'Chart.js',
+    'ChatGPT': 'ChatGPT',
+    'GSAP': 'GSAP',
+  };
+
+  const buildToolIcon = (t) => {
+    const label = toolLabels[t] || t;
+    return `<div class="modal-tool-icon" tabindex="0" role="img" aria-label="${label}" title="${label}">${toolIcons[t] || ''}<span class="tool-tooltip" role="tooltip">${label}</span></div>`;
   };
 
   const buildSection = (label, items) => {
@@ -522,7 +567,7 @@ if (document.querySelector('.case-grid')) {
 
     <div class="modal-cta-row">
       <div class="modal-tools-row">
-        ${data.tools.map((t) => `<div class="modal-tool-icon">${toolIcons[t] || ''}</div>`).join('')}
+        ${data.tools.map((t) => buildToolIcon(t)).join('')}
       </div>
       <div class="modal-cta-buttons">
         ${data.githubUrl ? `<a href="${data.githubUrl}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">${icons.github} View GitHub</a>` : ''}
@@ -531,14 +576,117 @@ if (document.querySelector('.case-grid')) {
     </div>
   `;
 
+  const buildProjectModal = (data) => {
+    const shots = data.screenshots || [];
+    const hasShots = shots.length > 0;
+    const hasArrows = shots.length > 1;
+
+    return `
+      <div class="modal-project-layout">
+        <div class="proj-intro">
+          <span class="modal-eyebrow">Project</span>
+          <h2 class="modal-title" id="modalTitle">${data.title}</h2>
+          <p class="modal-rich-desc">${data.shortDesc}</p>
+        </div>
+
+        <div class="proj-visual${hasShots ? '' : ' proj-visual-empty'}">
+          ${hasShots ? `
+          <div class="project-carousel">
+            <div class="project-carousel-viewport">
+              ${hasArrows ? `<button type="button" class="carousel-arrow carousel-arrow-prev" aria-label="Previous screenshot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>` : ''}
+              <img class="project-carousel-image" id="carouselImage" src="${shots[0].src}" alt="${shots[0].alt}">
+              ${hasArrows ? `<button type="button" class="carousel-arrow carousel-arrow-next" aria-label="Next screenshot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>` : ''}
+            </div>
+            ${hasArrows ? `
+            <div class="carousel-dots" id="carouselDots">
+              ${shots.map((_, i) => `<button type="button" class="carousel-dot${i === 0 ? ' active' : ''}" aria-label="Go to screenshot ${i + 1}" data-index="${i}"></button>`).join('')}
+            </div>` : ''}
+          </div>
+          <p class="project-carousel-caption" id="carouselCaption">${shots[0].caption || ''}</p>
+          ` : ''}
+        </div>
+
+        <div class="proj-problem modal-rich-block">
+          <h4 class="icon-label">${icons.alert} Problem</h4>
+          <p>${data.problem}</p>
+        </div>
+
+        <div class="proj-solution modal-rich-block">
+          <h4 class="icon-label">${icons.target} Solution</h4>
+          <p>${data.solution}</p>
+        </div>
+
+        <div class="proj-impact modal-rich-block">
+          <h4 class="icon-label">${icons.star} Business Impact</h4>
+          <ul class="achievements-list">${data.impactPoints.map((p) => `<li>${p}</li>`).join('')}</ul>
+          ${data.whatLearned ? `
+          <h4 class="icon-label impact-subheading">${icons.bulb} What I Learned</h4>
+          <ul class="achievements-list">${data.whatLearned.map((p) => `<li>${p}</li>`).join('')}</ul>` : ''}
+        </div>
+
+        <div class="proj-tools modal-tools-cta-row">
+          <div class="modal-tools-row">
+            ${data.tools.map((t) => buildToolIcon(t)).join('')}
+          </div>
+          ${data.ctaButtons && data.ctaButtons.length
+            ? `<div class="modal-cta-buttons">${data.ctaButtons.map((btn, i) => {
+                const cls = `btn ${i === 0 ? 'btn-primary' : 'btn-secondary'} btn-sm`;
+                return btn.action === 'close'
+                  ? `<button type="button" class="${cls} modal-cta-close-btn">${btn.label}</button>`
+                  : `<a href="${btn.url}" target="_blank" rel="noopener" class="${cls}">${icons.github} ${btn.label}</a>`;
+              }).join('')}</div>`
+            : data.githubUrl
+              ? `<a href="${data.githubUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">${icons.github} View on GitHub</a>`
+              : data.ctaUrl
+                ? `<a href="${data.ctaUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">${icons.external} ${data.ctaLabel || 'View Project'}</a>`
+                : ''}
+        </div>
+      </div>
+    `;
+  };
+
+  const initProjectCarousel = (shots) => {
+    if (!shots || shots.length < 2) return;
+
+    let index = 0;
+    const image = modalBody.querySelector('#carouselImage');
+    const caption = modalBody.querySelector('#carouselCaption');
+    const dots = modalBody.querySelectorAll('.carousel-dot');
+    const prevBtn = modalBody.querySelector('.carousel-arrow-prev');
+    const nextBtn = modalBody.querySelector('.carousel-arrow-next');
+
+    const render = () => {
+      const shot = shots[index];
+      image.src = shot.src;
+      image.alt = shot.alt;
+      caption.textContent = shot.caption || '';
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    };
+
+    const step = (delta) => {
+      index = (index + delta + shots.length) % shots.length;
+      render();
+    };
+
+    prevBtn.addEventListener('click', () => step(-1));
+    nextBtn.addEventListener('click', () => step(1));
+    dots.forEach((dot) => dot.addEventListener('click', () => {
+      index = Number(dot.dataset.index);
+      render();
+    }));
+  };
+
   const openModal = (key) => {
     const data = caseStudies[key];
     if (!data) return;
 
-    const isRich = key === 'capacity-tracking' || key === 'tool-adoption' || key === 'csat-learning' || key === 'marketing-performance' || key === 'ai-website-dev';
+    const hasScreens = !!(data.screenshots && data.screenshots.length);
+    const useProjectLayout = hasScreens || !!data.useProjectLayout;
+    const isRich = !useProjectLayout && (key === 'tool-adoption' || key === 'csat-learning' || key === 'marketing-performance' || key === 'ai-website-dev');
     modalCard.classList.toggle('modal-rich', isRich);
+    modalCard.classList.toggle('modal-project', useProjectLayout);
 
-    modalBody.innerHTML = isRich ? buildCapacityModal(data) : `
+    modalBody.innerHTML = useProjectLayout ? buildProjectModal(data) : isRich ? buildCapacityModal(data) : `
       <h2 class="modal-title" id="modalTitle">${data.title}</h2>
       <div class="modal-tags">${data.tags.map((t) => `<span class="tech-tag">${t}</span>`).join('')}</div>
       ${buildTextSection('Problem Statement', data.problem)}
@@ -549,6 +697,10 @@ if (document.querySelector('.case-grid')) {
       ${buildTextSection('Business Impact', data.impact)}
       ${buildSection('What I Would Do Next', data.next)}
     `;
+
+    if (hasScreens) initProjectCarousel(data.screenshots);
+    const modalCloseCta = modalBody.querySelector('.modal-cta-close-btn');
+    if (modalCloseCta) modalCloseCta.addEventListener('click', closeModal);
 
     modalOverlay.classList.add('open');
     modalOverlay.setAttribute('aria-hidden', 'false');
